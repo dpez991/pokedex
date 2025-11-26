@@ -1,19 +1,18 @@
-import { Button } from './components/Button'
-import { HeroPanel } from './components/HeroPanel'
+import { Routes, Route} from 'react-router';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { NotFound } from './pages/NotFound';
+import { Layout } from './pages/Layout';
 
 function App() {
   return (
-    <>
-      <HeroPanel photoId="25" />
-      <div>
-        <Button className="" >
-          <span>Haz Click</span>
-        </Button>
-        <Button className="principal" >
-          <span>Principal</span>
-        </Button>
-      </div>
-    </>
+    <Routes>
+      <Route element={<Layout/>}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   )
 }
 
