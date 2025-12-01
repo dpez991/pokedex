@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export const Header = ({ title = "Pokédex 2025" }) => {
   return (
     <header className="w-full pokedex-header">
-      {/* Contenedor interno consistente con hero y grid */}
+      {}
       <div className="site-container flex items-center justify-between py-4">
         <div className="flex items-center gap-4">
           <div className="pokeball w-12 h-12" aria-hidden />

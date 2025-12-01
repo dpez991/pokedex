@@ -8,7 +8,7 @@ export const HeroPanel = ({ photoId })=>{
     <section className="py-6">
       <div className="site-container">
         <div className="hero-card rounded-2xl shadow-xl overflow-hidden relative w-full">
-          {/* imagen de fondo cubierta toda la tarjeta */}
+          {}
           <div
             className="hero-bg absolute inset-0 bg-center bg-cover"
             style={{
